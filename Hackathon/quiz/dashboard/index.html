@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Resturant App</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="headertop">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>Are you Hungry??<a href="../add.html"> Order Now</a></p>
+          </div>
+
+          <div class="col-md-5 headersocials">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"
+                aria-hidden="true"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.snapchat.com/" target="_blank"><i class="fa fa-snapchat" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play"
+                aria-hidden="true"></i></a>
+            <a href="javascript:void(0)" class="sslogfin" data-toggle="modal" data-target="#login" id="header-login"><i
+                class="fa fa-sign-in" aria-hidden="true" onClick="login()"></i>&nbsp;&nbsp;Login</a>
+            <a href="javascript:void(0)" class="sslogfin" data-toggle="modal" data-target="#Register"
+              id="header-Register"><i class="fa fa-user-plus" aria-hidden="true" onclick="ressignup()"></i>&nbsp;&nbsp;Register</a>
+          </div>
+
+          <div class="col-md-1 lang">
+            <select onchange="languagechange(this.value)">
+              <option value="">Language</option>
+              <option value="English">English</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----Main Menu start---->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container">
+        <a class="navbar-brand" href="../dashboard/index.html"><b><i>Resturant App</i></b><img src=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="search">
+          <form class="form-box" id="searhforms" action="search.php" method="get">
+            <div class="input-group ">
+              <!-- <input type="text" class="search-inpout" name="search" id="Searchbysearch" placeholder="  Search Items"> -->
+              <div class="input-group-append">
+                <!-- <a href="#" onclick="startDictation()" id="submit" class="search-icon"><i class="fa fa-microphone" aria-hidden="true"></i></a> -->
+                <button class="search-icon1" href="javascript:void(0);" id="search" type="submit"
+                  style="padding: 0;background: white;color: #20ad96;display:none;">
+                  <i class="fa fa-search"></i>
+                </button>
+
+              </div>
+            </div>
+
+          </form>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="./index.html"><i class="fa fa-home" aria-hidden="true"></i> HOME </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../add.html"><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i> Orders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../add.html"><i class="fa fa-address-book" aria-hidden="true"></i> Billing Procedure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutt"><i class="fa fa-info" aria-hidden="true"></i> About Us</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!----banner section--->
+  <section class="banner">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner text-center ">
+        <div class="carousel-item active">
+          <h1><b><i>Resturant App</i></b></h1>
+          <div class="container">
+            <p>Would you like millions of new customers to enjoy your amazing food and groceries? So would we!
+              It's simple: we list your menu and product lists online, help you process orders, pick them up, and
+              deliver them to hungry pandas – in a heartbeat!
+              Interested? Let's start our partnership today!</p>
+          </div>
+
+          <a href="#" class="btn1">New Items</a>
+          <a href="#" class="btn2">Order Now</a>
+        </div>
+        <div class="carousel-item">
+          <h1><b><i>Resturant App</i></b></h1>
+          <div class="container">
+            <p>Would you like millions of new customers to enjoy your amazing food and groceries? So would we!
+              It's simple: we list your menu and product lists online, help you process orders, pick them up, and
+              deliver them to hungry pandas – in a heartbeat!
+              Interested? Let's start our partnership today!</p>
+            <a href="../add.html" class="btn1">New Items</a>
+            <a href="../add.html" class="btn2">Order Now</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <h1><b><i>Resturant App</i></b></h1>
+          <div class="container">
+            <p>Would you like millions of new customers to enjoy your amazing food and groceries? So would we!
+              It's simple: we list your menu and product lists online, help you process orders, pick them up, and
+              deliver them to hungry pandas – in a heartbeat!
+              Interested? Let's start our partnership today!</p>
+              <a href="../add.html" class="btn1">New Items</a>
+              <a href="../add.html" class="btn2">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <!--Choose section--->
+  <section class="choose">
+    <h2>Choose Your Items</h2>
+    <p>Choose what you'd like to Eat<br> from our extensive Menu.</p>
+    <h3>Stay Healthy. It's the food and groceries you love, delivered.</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 text-center">
+          <div class="featuredicon">
+            <i class="fa fa-flag" aria-hidden="true"></i>
+          </div>
+          <div class="featuredtext">
+            <h2>30 Casseroles You'll Want to Make Forever</h2>
+            <p>The original one-pan meal, casseroles are the perfect choice for a delicious weeknight dinner. These top-rated recipes are super easy to throw together.</p>
+          </div>
+
+        </div>
+
+        <div class="col-md-3 text-center">
+          <div class="featuredicon">
+            <i class="fa fa-file" aria-hidden="true"></i>
+
+          </div>
+          <div class="featuredtext">
+            <h2>Peach Cobbler Coffee Cake Is the One You've Been Waiting For</h2>
+            <p>The original one-pan meal, casseroles are the perfect choice for a delicious weeknight dinner. These top-rated recipes are super easy to throw together.</p>
+          </div>
+
+        </div>
+
+        <div class="col-md-3 text-center">
+          <div class="featuredicon">
+            <i class="fa fa-video-camera" aria-hidden="true"></i>
+          </div>
+          <div class="featuredtext">
+            <h2>
+              Chef John's Farmer's Frittata Is Here for Your Fresh Garden Vegetables</h2>
+            <p>The original one-pan meal, casseroles are the perfect choice for a delicious weeknight dinner. These top-rated recipes are super easy to throw together.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 text-center">
+          <div class="featuredicon">
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+          </div>
+          <div class="featuredtext">
+            <h2>Our Complete Collection of Chicken Breast Recipes</h2>
+            <p>The original one-pan meal, casseroles are the perfect choice for a delicious weeknight dinner. These top-rated recipes are super easy to throw together.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!----get started section--->
+  <section class="getstarted">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="offset-md-1"></div>
+        <div class="col-md-6">
+          <h2>Give Your Order Now!</h2>
+          <h3>What Will You Order Now?</h3>
+          <p>Our Complete Collection of Chicken Breast Recipes. The original one-pan meal, casseroles are the perfect choice for a delicious weeknight dinner. These top-rated recipes are super easy to throw together.</p>
+
+        </div>
+
+        <div class="col-md-4">
+          <img src="images/5.jpg">
+
+
+        </div>
+        <div class="offset-md-1"></div>
+      </div>
+    </div>
+  </section>
+
+  <!----about us section--->
+  <section class="aboutus" id="aboutt">
+    <h2>About Us</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <img src="images/7.jpg">
+          <a href="https://fullmoon.extremeearn.com/frontassets/videos/1629208157.mp4" class="video-icon"><i
+              class="fa fa-play-circle" aria-hidden="true"></i></a>
+        </div>
+
+        <div offset-md-1></div>
+
+        <div class="col-md-6">
+          <p>
+            So would we!
+              It's simple: we list your menu and product lists online, help you process orders, pick them up, and
+              deliver them to hungry pandas – in a heartbeat!
+              Interested? Let's start our partnership today!
+          </p>
+          <p>Our mission is: To be the platform for all rights you want to give food order easily online</p>
+          <ul>
+            <li>
+              Increase access to high-quality products for everyone, everywhere
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="../add.html" class="btn1">Order Now!</a>
+    </div>
+  </section>
+
+
+  <!---Online Section---->
+  <section class="online">
+    <h2>Order Online</h2>
+    <h3>Popular Online Orders Around You</h3>
+    <p>Choose from hundreds of online Orders<br> Resturant.</p>
+    <div class="container-fluid">
+      <div class="row">
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+</body>
+
+</html>
